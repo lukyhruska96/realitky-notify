@@ -1,0 +1,24 @@
+{
+  "name": "reality-notify",
+  "version": "1.0.0",
+  "description": "Notification server about new apparment offer sending to Slack",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukyhruska96/realitky-notify.git"
+  },
+  "keywords": [
+    "slack",
+    "realitky",
+    "notifications"
+  ],
+  "author": "Lukáš Hruška",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukyhruska96/realitky-notify/issues"
+  },
+  "homepage": "https://github.com/lukyhruska96/realitky-notify#readme"
+}
