@@ -43,7 +43,7 @@ const callAPI = (URL) => {
 }
 
 const sendNormalized = async (from, data) => {
-    data.sort((a,b) => b.id - a.id);
+    data.sort((a,b) => a.id - b.id);
     for(let i = 0; i < data.length; ++i) {
         let el = data[i];
         let attachments = [];
@@ -100,9 +100,10 @@ const sendNormalized = async (from, data) => {
     }
 }
 
-const loop = () => portals.forEach(async val => {
+const loop = async () => portals.forEach(async val => {
     process.stdout.write(util.format('%s: ',val.name));
     await callAPI(val.url).then(async (body) => {
+            body = await val.extract(body);
             let maxVal = 0;
             let data = [];
             body.forEach(el => {
