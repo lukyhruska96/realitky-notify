@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/lukyhruska96/realitky-notify/issues"
   },
-  "homepage": "https://github.com/lukyhruska96/realitky-notify#readme"
+  "homepage": "https://github.com/lukyhruska96/realitky-notify#readme",
+  "dependencies": {
+    "@slack/events-api": "^2.2.0",
+    "@slack/web-api": "^5.0.1",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0"
+  }
 }
